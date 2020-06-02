@@ -1,21 +1,18 @@
 ﻿using System;
 
-namespace aula_8
-{
-    class Program
+namespace aula_8{
+    
+     class Program
     {
         static void Main(string[] args)
         {
-            personagem tony = new personagem();
+            cartaodecredito visa = new cartaodecredito();
 
-            tony.nome = "Tony Stark";
-            tony.armadura = "MK LXXXV";
-            tony.idade = 37;
-           
-           Console.WriteLine(tony.atacar());
-            Console.WriteLine(tony.defender());
+            System.Console.WriteLine("Digite a data do pagamento");
+            visa.data = DateTime.Parse(Console.ReadLine());
 
-
-            }
+            System.Console.WriteLine("Data digitada: "+visa);
+        }
     }
 }
+
