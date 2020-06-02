@@ -6,8 +6,16 @@ namespace aula_8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-             Console.WriteLine("Hello World!");
-        }
+            personagem tony = new personagem();
+
+            tony.nome = "Tony Stark";
+            tony.armadura = "MK LXXXV";
+            tony.idade = 37;
+           
+           Console.WriteLine(tony.atacar());
+            Console.WriteLine(tony.defender());
+
+
+            }
     }
 }
